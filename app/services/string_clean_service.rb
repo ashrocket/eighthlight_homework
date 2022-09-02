@@ -6,6 +6,11 @@ class StringCleanService < ApplicationService
   end
 
   def call
-    return new_string.to_i
+    begin
+      num = new_string.to_i
+      return num
+    rescue ArgumentError => e
+      return nil
+    end
   end
 end
