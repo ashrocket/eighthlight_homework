@@ -7,6 +7,7 @@ RSpec.describe StringCleanService, type: :model do
       expect(result.to_i).to be_a_kind_of(Numeric)
     end
     it 'cleans a string and returns and empty string when there are no ints' do
+      # "", and nil are both produce the integer 0 when converted using to_i
       result = StringCleanService.new("Rc!bxXMEMnCfXeqm*").call
       expect(result.to_i).to be_a_kind_of(Numeric)
     end
