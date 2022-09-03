@@ -1,5 +1,7 @@
 # README
-Answering queastion 3 at scale
+https://github.com/ashrocket/eighthlight_homework
+
+# Answering question 3 at scale
 If we had a very large dataset and we don't care about the ordering of the results, 
 we can use a a kind of map reduce approach, convert the ids first into a set of integers using an async background task
 active job (though I'd probably use a lambda)
