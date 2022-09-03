@@ -4,7 +4,7 @@ class ListUniqueService < ApplicationService
   attr_accessor :new_list, :old_list
   def initialize(input)
     @old_list = input
-    @new_list  = @old_list.chars.to_a.uniq.join
+    @new_list  = @old_list.uniq
   end
 
   def call
